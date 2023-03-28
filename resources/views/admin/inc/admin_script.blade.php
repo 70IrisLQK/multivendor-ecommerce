@@ -20,3 +20,5 @@
 <script src="{{ asset('admin_backend/assets/js/index.js') }}"></script>
 <!--app JS-->
 <script src="{{ asset('admin_backend/assets/js/app.js') }}"></script>
+<script src="{{ asset('admin_backend/assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('admin_backend/assets/plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
