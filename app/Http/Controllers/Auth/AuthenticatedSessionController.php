@@ -38,7 +38,7 @@ class AuthenticatedSessionController extends Controller
                 $url = 'vendor/dashboard';
                 break;
             case 'user':
-                $url = '/dashboard';
+                $url = '/';
                 break;
 
             default:

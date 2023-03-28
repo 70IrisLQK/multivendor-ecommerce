@@ -25,6 +25,15 @@
                                         </p>
                                     </div>
                                     <div class="form-body">
+                                        @if ($errors->any())
+                                            <div class="alert alert-danger">
+                                                <ul>
+                                                    @foreach ($errors->all() as $error)
+                                                        <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        @endif
                                         <form class="row g-3" action="{{ route('login') }}" method="post">
                                             @csrf
                                             <div class="col-12">
