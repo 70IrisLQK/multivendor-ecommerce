@@ -1,5 +1,4 @@
 <header>
-
     <div class="topbar d-flex align-items-center">
         <nav class="navbar navbar-expand">
             <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
@@ -357,23 +356,23 @@
                 </ul>
             </div>
             @php
-                $getAdminById = App\Models\User::find(Auth::user()->id);
+                $getVendorById = App\Models\User::find(Auth::user()->id);
             @endphp
             <div class="user-box dropdown">
                 <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="{{ asset('upload/avatars/' . $getAdminById->photo) }}" class="user-img"
+                    <img src="{{ asset('upload/avatars/' . $getVendorById->photo) }}" class="user-img"
                         alt="user avatar">
                     <div class="user-info ps-3">
-                        <p class="user-name mb-0">{{ $getAdminById->name }}</p>
-                        <p class="designattion mb-0">{{ $getAdminById->role }}</p>
+                        <p class="user-name mb-0">{{ $getVendorById->name }}</p>
+                        <p class="designattion mb-0">{{ $getVendorById->role }}</p>
                     </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="{{ route('admin.profile') }}"><i
+                    <li><a class="dropdown-item" href="{{ route('vendor.profile') }}"><i
                                 class="bx bx-user"></i><span>Profile</span></a>
                     </li>
-                    <li><a class="dropdown-item" href="{{ route('admin.password') }}"><i
+                    <li><a class="dropdown-item" href="{{ route('vendor.password') }}"><i
                                 class="bx bx-cog"></i><span>Change
                                 Password</span></a>
                     </li>
@@ -390,7 +389,7 @@
                         <div class="dropdown-divider mb-0"></div>
                     </li>
                     <li>
-                        <form action="{{ route('admin.logout') }}" method="POST">
+                        <form action="{{ route('vendor.logout') }}" method="POST">
                             @csrf
                             <button class="dropdown-item" href="">
                                 <i class='bx bx-log-out-circle'>
