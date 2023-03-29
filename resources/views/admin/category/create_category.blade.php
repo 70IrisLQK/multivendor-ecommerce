@@ -4,14 +4,14 @@
         <div class="page-content">
             <!--breadcrumb-->
             <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                <div class="breadcrumb-title pe-3">Brand</div>
+                <div class="breadcrumb-title pe-3">Category</div>
                 <div class="ps-3">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0 p-0">
                             <li class="breadcrumb-item"><a href="{{ url('damin/dashboard') }}"><i
                                         class="bx bx-home-alt"></i></a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Management Brand</li>
+                            <li class="breadcrumb-item active" aria-current="page">Management Category</li>
                         </ol>
                     </nav>
                 </div>
@@ -20,17 +20,17 @@
             <!--end breadcrumb-->
             <div class="row">
                 <div class="col-xl-7 mx-auto">
-                    <h6 class="mb-0 text-uppercase">Management Brand</h6>
+                    <h6 class="mb-0 text-uppercase">Management Category</h6>
                     <hr>
                     <div class="card border-top border-0 border-4 border-primary">
                         <div class="card-body p-5">
                             <div class="card-title d-flex align-items-center">
                                 <div><i class="bx bxs-user me-1 font-22 text-primary"></i>
                                 </div>
-                                <h5 class="mb-0 text-primary">Add Brand</h5>
+                                <h5 class="mb-0 text-primary">Add Category</h5>
                             </div>
                             <hr>
-                            <form class="row g-3" method="POST" action="{{ route('brands.store') }}"
+                            <form class="row g-3" method="POST" action="{{ route('categories.store') }}"
                                 enctype="multipart/form-data">
                                 @csrf
                                 @if ($errors->any())
@@ -57,7 +57,7 @@
                                 </div>
 
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-primary px-5">Add Brand</button>
+                                    <button type="submit" class="btn btn-primary px-5">Add Category</button>
                                 </div>
                             </form>
                         </div>

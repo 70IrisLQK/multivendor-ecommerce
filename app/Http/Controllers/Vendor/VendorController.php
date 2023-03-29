@@ -14,6 +14,9 @@ use Intervention\Image\ImageManagerStatic as Image;
 class VendorController extends Controller
 {
     public const PUBLIC_PATH = 'upload/avatars/';
+    public const ROLE = 'vendor';
+    public const INACTIVE = 'inactive';
+    public const ACTIVE = 'active';
 
     public function vendorDashboard()
     {
@@ -121,5 +124,63 @@ class VendorController extends Controller
             toastr()->error('Oops! Something went wrong!', 'Oops!');
             return redirect()->back();
         }
+    }
+
+    public function becomeVendor()
+    {
+        return view('frontend.pages.become_vendor');
+    }
+
+    public function register(Request $request)
+    {
+        $request->validate([
+            'name' => ['required', 'max:255'],
+            'email' => ['required', 'max:255', 'email'],
+            'password' => [
+                'required',
+                'max:255', 'min:8',
+                'required_with:confirm_password',
+                'same:confirm_password'
+            ],
+            'confirm_password' => ['max:255', 'min:8'],
+        ]);
+        $newVendor = new User();
+        $newVendor->name = $request->name;
+        $newVendor->email = $request->email;
+        $newVendor->password = Hash::make($request->password);
+        $newVendor->role = VendorController::ROLE;
+        $newVendor->status = VendorController::INACTIVE;
+        $newVendor->save();
+
+        toastr()->success('Register vendor success');
+        return redirect()->back();
+    }
+
+    public function getInactiveVendor()
+    {
+        $listInactiveVendor = User::latest('id')
+            ->where('status', VendorController::INACTIVE)
+            ->where('role', VendorController::ROLE)
+            ->get();
+        return view('admin.vendor.inactive_vendor', compact('listInactiveVendor'));
+    }
+    public function getActiveVendor()
+    {
+        $listActiveVendor = User::latest('id')
+            ->where('status', VendorController::ACTIVE)
+            ->where('role', VendorController::ROLE)
+            ->get();
+        return view('admin.vendor.active_vendor', compact('listActiveVendor'));
+    }
+
+    public function updateStatus(Request $request)
+    {
+        $id = $request->id;
+        $vendor = User::find($id);
+        $vendor->status = $request->status == 'active' ? VendorController::ACTIVE : VendorController::INACTIVE;
+        $vendor->save();
+
+        toastr()->success('Update Status Vendor Success');
+        return redirect()->back();
     }
 }

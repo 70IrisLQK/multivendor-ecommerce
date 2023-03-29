@@ -14,25 +14,9 @@
                         </ol>
                     </nav>
                 </div>
-                <div class="ms-auto">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">Settings</button>
-                        <button type="button"
-                            class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a class="dropdown-item"
-                                href="javascript:;">Action</a>
-                            <a class="dropdown-item" href="javascript:;">Another action</a>
-                            <a class="dropdown-item" href="javascript:;">Something else here</a>
-                            <div class="dropdown-divider"></div> <a class="dropdown-item" href="javascript:;">Separated
-                                link</a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!--end breadcrumb-->
-            <h6 class="mb-0 text-uppercase">Management Brand</h6>
+            <h6 class="mb-0 text-uppercase">Management SubCategory</h6>
             <hr />
             <div class="card">
                 <div class="card-body">
@@ -49,25 +33,22 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($listBrands as $brand)
+                                @foreach ($listCategories as $category)
                                     <tr>
-                                        <td>{{ $brand->name }}</td>
-                                        <td>{{ $brand->slug }}</td>
+                                        <td>{{ $category->name }}</td>
+                                        <td>{{ $category->slug }}</td>
                                         <td>
-                                            <img src="{{ asset('upload/brands/' . $brand->image) }}"
-                                                alt="{{ $brand->name }}" class="img-responsive" width="100px">
+                                            <img src="{{ asset('upload/categories/' . $category->name) }}" alt="">
                                         </td>
-                                        <td>{{ $brand->created_at }}</td>
-                                        <td>{{ $brand->updated_at }}</td>
+                                        <td>{{ $category->created_at }}</td>
+                                        <td>{{ $category->updated_at }}</td>
                                         <td>
-                                            <a href="{{ route('brands.edit', [$brand->id]) }}" class="btn btn-info">Edit</a>
-                                            <form action="{{ route('brands.destroy', [$brand->id]) }}" method="POST">
-                                                @csrf
-                                                @method('delete')
-                                                <button class="btn btn-danger">
-                                                    Delete
-                                                </button>
-                                            </form>
+                                            <a href="{{ route('categories.edit', [$category->id]) }}"
+                                                class="btn btn-info">Edit</a>
+                                            <a class="btn btn-danger"
+                                                href="{{ route('categories.destroy', [$category->id]) }}" id="delete">
+                                                Delete
+                                            </a>
                                         </td>
                                     </tr>
                                 @endforeach

@@ -5,7 +5,7 @@
             <div class="home-slide-cover mt-30">
                 <div class="hero-slider-1 style-4 dot-style-1 dot-style-1-position-1">
                     <div class="single-hero-slider single-animation-wrap"
-                        style="background-image: url(assets/imgs/slider/slider-1.png)">
+                        style="background-image: url({{ asset('frontend/assets/imgs/slider/slider-1.png') }})">
                         <div class="slider-content">
                             <h1 class="display-2 mb-40">
                                 Don’t miss amazing<br />
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="single-hero-slider single-animation-wrap"
-                        style="background-image: url(assets/imgs/slider/slider-2.png)">
+                        style="background-image: url({{ asset('frontend/assets/imgs/slider/slider-2.png') }})">
                         <div class="slider-content">
                             <h1 class="display-2 mb-40">
                                 Fresh Vegetables<br />
@@ -52,77 +52,88 @@
                 <div class="carausel-10-columns" id="carausel-10-columns">
                     <div class="card-2 bg-9 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-13.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-13.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Cake & Milk</a></h6>
                         <span>26 items</span>
                     </div>
                     <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-12.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-12.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Oganic Kiwi</a></h6>
                         <span>28 items</span>
                     </div>
                     <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-11.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-11.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Peach</a></h6>
                         <span>14 items</span>
                     </div>
                     <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-9.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-9.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Red Apple</a></h6>
                         <span>54 items</span>
                     </div>
                     <div class="card-2 bg-13 wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-3.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-3.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Snack</a></h6>
                         <span>56 items</span>
                     </div>
                     <div class="card-2 bg-14 wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-1.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-1.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Vegetables</a></h6>
                         <span>72 items</span>
                     </div>
                     <div class="card-2 bg-15 wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-2.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-2.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Strawberry</a></h6>
                         <span>36 items</span>
                     </div>
                     <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay=".8s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-4.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-4.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Black plum</a></h6>
                         <span>123 items</span>
                     </div>
                     <div class="card-2 bg-10 wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-5.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-5.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Custard apple</a></h6>
                         <span>34 items</span>
                     </div>
                     <div class="card-2 bg-12 wow animate__animated animate__fadeInUp" data-wow-delay="1s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-14.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-14.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Coffe & Tea</a></h6>
                         <span>89 items</span>
                     </div>
                     <div class="card-2 bg-11 wow animate__animated animate__fadeInUp" data-wow-delay="0s">
                         <figure class="img-hover-scale overflow-hidden">
-                            <a href="shop-grid-right.html"><img src="assets/imgs/shop/cat-5.png" alt="" /></a>
+                            <a href="shop-grid-right.html"><img src="{{ asset('frontend/assets/imgs/shop/cat-5.png') }}"
+                                    alt="" /></a>
                         </figure>
                         <h6><a href="shop-grid-right.html">Headphone</a></h6>
                         <span>87 items</span>
@@ -137,7 +148,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay="0">
-                        <img src="assets/imgs/banner/banner-1.png" alt="" />
+                        <img src="{{ asset('frontend/assets/imgs/banner/banner-1.png') }}" alt="" />
                         <div class="banner-text">
                             <h4>
                                 Everyday Fresh & <br />Clean with Our<br />
@@ -150,7 +161,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="banner-img wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
-                        <img src="assets/imgs/banner/banner-2.png" alt="" />
+                        <img src="{{ asset('frontend/assets/imgs/banner/banner-2.png') }}" alt="" />
                         <div class="banner-text">
                             <h4>
                                 Make your Breakfast<br />
@@ -163,7 +174,7 @@
                 </div>
                 <div class="col-lg-4 d-md-none d-lg-flex">
                     <div class="banner-img mb-sm-0 wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
-                        <img src="assets/imgs/banner/banner-3.png" alt="" />
+                        <img src="{{ asset('frontend/assets/imgs/banner/banner-3.png') }}" alt="" />
                         <div class="banner-text">
                             <h4>The best Organic <br />Products Online</h4>
                             <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i
@@ -225,9 +236,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-1-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -279,9 +292,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-2-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -333,9 +348,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -387,9 +404,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -438,9 +457,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -491,9 +512,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-6-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-6-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -541,9 +564,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-7-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -591,9 +616,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-8-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-8-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -644,9 +671,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -697,9 +726,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-10-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-10-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -753,9 +784,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-10-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-10-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -806,9 +839,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-12-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-12-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-12-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-12-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -859,9 +894,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-13-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-13-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-13-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-13-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -912,9 +949,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-14-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-14-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-14-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-14-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -962,9 +1001,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-15-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-15-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-15-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-15-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1015,9 +1056,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-16-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-16-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-16-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-16-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1065,9 +1108,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-7-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1115,9 +1160,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-8-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-8-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1168,9 +1215,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1221,9 +1270,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-10-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-10-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1277,9 +1328,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1330,9 +1383,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-8-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-8-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1383,9 +1438,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-7-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1436,9 +1493,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-6-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-6-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1486,9 +1545,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1539,9 +1600,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1589,9 +1652,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1639,9 +1704,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-2-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1692,9 +1759,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1745,9 +1814,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-1-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1801,9 +1872,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-6-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-6-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1854,9 +1927,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-7-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1907,9 +1982,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-8-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-8-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -1960,9 +2037,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2010,9 +2089,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2063,9 +2144,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2113,9 +2196,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-2-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2163,9 +2248,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-1-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2216,9 +2303,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-11-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-11-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-11-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-11-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2269,9 +2358,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-12-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-12-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-12-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-12-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2325,9 +2416,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-12-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-12-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-12-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-12-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2378,9 +2471,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-13-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-13-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-13-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-13-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2431,9 +2526,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-14-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-14-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-14-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-14-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2484,9 +2581,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-15-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-15-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-15-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-15-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2534,9 +2633,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-16-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-16-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-16-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-16-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2587,9 +2688,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2637,9 +2740,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-7-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2687,9 +2792,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-8-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-8-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2740,9 +2847,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2793,9 +2902,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-10-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-10-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2849,9 +2960,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2902,9 +3015,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-6-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-6-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -2955,9 +3070,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-8-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-8-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3008,9 +3125,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3058,9 +3177,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3111,9 +3232,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-6-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-6-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-6-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3161,9 +3284,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-7-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3211,9 +3336,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-8-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-8-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3264,9 +3391,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3317,9 +3446,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-10-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-10-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3373,9 +3504,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3426,9 +3559,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3479,9 +3614,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-7-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3532,9 +3669,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3582,9 +3721,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-10-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-10-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3635,9 +3776,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-16-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-16-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-16-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-16-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3685,9 +3828,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-7-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-7-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-7-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3735,9 +3880,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-8-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-8-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-8-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3788,9 +3935,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-9-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-9-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-9-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3841,9 +3990,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-10-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-10-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-10-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -3923,9 +4074,11 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="shop-product-right.html">
-                                                    <img class="default-img" src="assets/imgs/shop/product-1-1.jpg"
+                                                    <img class="default-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-1-1.jpg') }}"
                                                         alt="" />
-                                                    <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg"
+                                                    <img class="hover-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-1-2.jpg') }}"
                                                         alt="" />
                                                 </a>
                                             </div>
@@ -3973,9 +4126,11 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="shop-product-right.html">
-                                                    <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                                    <img class="default-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                         alt="" />
-                                                    <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                                    <img class="hover-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                         alt="" />
                                                 </a>
                                             </div>
@@ -4021,9 +4176,11 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="shop-product-right.html">
-                                                    <img class="default-img" src="assets/imgs/shop/product-2-1.jpg"
+                                                    <img class="default-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-2-1.jpg') }}"
                                                         alt="" />
-                                                    <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg"
+                                                    <img class="hover-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-2-2.jpg') }}"
                                                         alt="" />
                                                 </a>
                                             </div>
@@ -4069,9 +4226,11 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="shop-product-right.html">
-                                                    <img class="default-img" src="assets/imgs/shop/product-3-1.jpg"
+                                                    <img class="default-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-3-1.jpg') }}"
                                                         alt="" />
-                                                    <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg"
+                                                    <img class="hover-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-3-2.jpg') }}"
                                                         alt="" />
                                                 </a>
                                             </div>
@@ -4117,9 +4276,11 @@
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
                                                 <a href="shop-product-right.html">
-                                                    <img class="default-img" src="assets/imgs/shop/product-4-1.jpg"
+                                                    <img class="default-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-4-1.jpg') }}"
                                                         alt="" />
-                                                    <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg"
+                                                    <img class="hover-img"
+                                                        src="{{ asset('frontend/assets/imgs/shop/product-4-2.jpg') }}"
                                                         alt="" />
                                                 </a>
                                             </div>
@@ -4195,9 +4356,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-1-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4252,9 +4415,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-2-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4306,9 +4471,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4360,9 +4527,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4413,9 +4582,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4495,9 +4666,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-1-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4552,9 +4725,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-2-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4606,9 +4781,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4660,9 +4837,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4713,9 +4892,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4795,9 +4976,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-1-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-1-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-1-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4852,9 +5035,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-2-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-2-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-2-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4906,9 +5091,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-3-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-3-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-3-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -4960,9 +5147,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-4-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-4-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-4-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -5013,9 +5202,11 @@
                                 <div class="product-img-action-wrap">
                                     <div class="product-img product-img-zoom">
                                         <a href="shop-product-right.html">
-                                            <img class="default-img" src="assets/imgs/shop/product-5-1.jpg"
+                                            <img class="default-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-1.jpg') }}"
                                                 alt="" />
-                                            <img class="hover-img" src="assets/imgs/shop/product-5-2.jpg"
+                                            <img class="hover-img"
+                                                src="{{ asset('frontend/assets/imgs/shop/product-5-2.jpg') }}"
                                                 alt="" />
                                         </a>
                                     </div>
@@ -5084,7 +5275,8 @@
                     <div class="product-list-small animated animated">
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-1.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-1.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5106,7 +5298,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-2.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-2.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5128,7 +5321,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-3.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-3.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5156,7 +5350,8 @@
                     <div class="product-list-small animated animated">
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-4.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-4.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5178,7 +5373,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-5.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-5.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5200,7 +5396,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-6.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-6.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5228,7 +5425,8 @@
                     <div class="product-list-small animated animated">
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-7.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-7.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5250,7 +5448,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-8.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-8.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5271,7 +5470,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-9.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-9.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5298,7 +5498,8 @@
                     <div class="product-list-small animated animated">
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-10.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-10.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5320,7 +5521,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-11.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-11.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5342,7 +5544,8 @@
                         </article>
                         <article class="row align-items-center hover-up">
                             <figure class="col-md-4 mb-0">
-                                <a href="shop-product-right.html"><img src="assets/imgs/shop/thumbnail-12.jpg"
+                                <a href="shop-product-right.html"><img
+                                        src="{{ asset('frontend/assets/imgs/shop/thumbnail-12.jpg') }}"
                                         alt="" /></a>
                             </figure>
                             <div class="col-md-8 mb-0">
@@ -5388,7 +5591,8 @@
                     <div class="vendor-img-action-wrap">
                         <div class="vendor-img">
                             <a href="vendor-details-1.html">
-                                <img class="default-img" src="assets/imgs/vendor/vendor-1.png" alt="" />
+                                <img class="default-img" src="{{ asset('frontend/assets/imgs/vendor/vendor-1.png') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="product-badges product-badges-position product-badges-mrg">
@@ -5412,7 +5616,8 @@
                         <div class="vendor-info mb-30">
                             <ul class="contact-infor text-muted">
 
-                                <li><img src="assets/imgs/theme/icons/icon-contact.svg" alt="" /><strong>Call
+                                <li><img src="{{ asset('frontend/assets/imgs/theme/icons/icon-contact.svg') }}"
+                                        alt="" /><strong>Call
                                         Us:</strong><span>(+91) -
                                         540-025-124553</span></li>
                             </ul>
@@ -5428,7 +5633,8 @@
                     <div class="vendor-img-action-wrap">
                         <div class="vendor-img">
                             <a href="vendor-details-1.html">
-                                <img class="default-img" src="assets/imgs/vendor/vendor-2.png" alt="" />
+                                <img class="default-img" src="{{ asset('frontend/assets/imgs/vendor/vendor-2.png') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="product-badges product-badges-position product-badges-mrg">
@@ -5452,7 +5658,8 @@
                         <div class="vendor-info mb-30">
                             <ul class="contact-infor text-muted">
 
-                                <li><img src="assets/imgs/theme/icons/icon-contact.svg" alt="" /><strong>Call
+                                <li><img src="{{ asset('frontend/assets/imgs/theme/icons/icon-contact.svg') }}"
+                                        alt="" /><strong>Call
                                         Us:</strong><span>(+91) -
                                         540-025-124553</span></li>
                             </ul>
@@ -5468,7 +5675,8 @@
                     <div class="vendor-img-action-wrap">
                         <div class="vendor-img">
                             <a href="vendor-details-1.html">
-                                <img class="default-img" src="assets/imgs/vendor/vendor-3.png" alt="" />
+                                <img class="default-img" src="{{ asset('frontend/assets/imgs/vendor/vendor-3.png') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="product-badges product-badges-position product-badges-mrg">
@@ -5492,7 +5700,8 @@
                         <div class="vendor-info mb-30">
                             <ul class="contact-infor text-muted">
 
-                                <li><img src="assets/imgs/theme/icons/icon-contact.svg" alt="" /><strong>Call
+                                <li><img src="{{ asset('frontend/assets/imgs/theme/icons/icon-contact.svg') }}"
+                                        alt="" /><strong>Call
                                         Us:</strong><span>(+91) -
                                         540-025-124553</span></li>
                             </ul>
@@ -5508,7 +5717,8 @@
                     <div class="vendor-img-action-wrap">
                         <div class="vendor-img">
                             <a href="vendor-details-1.html">
-                                <img class="default-img" src="assets/imgs/vendor/vendor-4.png" alt="" />
+                                <img class="default-img" src="{{ asset('frontend/assets/imgs/vendor/vendor-4.png') }}"
+                                    alt="" />
                             </a>
                         </div>
                         <div class="product-badges product-badges-position product-badges-mrg">
@@ -5532,7 +5742,8 @@
                         <div class="vendor-info mb-30">
                             <ul class="contact-infor text-muted">
 
-                                <li><img src="assets/imgs/theme/icons/icon-contact.svg" alt="" /><strong>Call
+                                <li><img src="{{ asset('frontend/assets/imgs/theme/icons/icon-contact.svg') }}"
+                                        alt="" /><strong>Call
                                         Us:</strong><span>(+91) -
                                         540-025-124553</span></li>
                             </ul>

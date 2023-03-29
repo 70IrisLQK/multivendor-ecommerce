@@ -3,14 +3,15 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Brand;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Intervention\Image\ImageManagerStatic as Image;
 
-class BrandController extends Controller
+class CategoryController extends Controller
 {
-    public const PUBLIC_PATH = 'upload/brands/';
+    public const PUBLIC_PATH = 'upload/categories/';
+
     /**
      * Display a listing of the resource.
      *
@@ -18,9 +19,9 @@ class BrandController extends Controller
      */
     public function index()
     {
-        $listBrands = Brand::latest('id')->get();
+        $listCategories = Category::latest('id')->get();
 
-        return view('admin.brand.list_brand', compact('listBrands'));
+        return view('admin.category.list_category', compact('listCategories'));
     }
 
     /**
@@ -30,7 +31,7 @@ class BrandController extends Controller
      */
     public function create()
     {
-        return view('admin.brand.create_brand');
+        return view('admin.category.create_category');
     }
 
     /**
@@ -49,16 +50,16 @@ class BrandController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $pathName = Str::uuid() . '.' . $image->getClientOriginalExtension();
-            Image::make($image)->resize(120, 120)->save(BrandController::PUBLIC_PATH . $pathName);
+            Image::make($image)->resize(120, 120)->save(CategoryController::PUBLIC_PATH . $pathName);
         }
 
-        $newBrand = new Brand();
-        $newBrand->name = $request->name;
-        $newBrand->slug = Str::slug($request->name);
-        $newBrand->image = $pathName;
-        $newBrand->save();
+        $newCategory = new Category();
+        $newCategory->name = $request->name;
+        $newCategory->slug = Str::slug($request->name);
+        $newCategory->image = $pathName;
+        $newCategory->save();
 
-        toastr()->success('Added Brand Success');
+        toastr()->success('Added Category Success');
 
         return redirect()->back();
     }
@@ -82,8 +83,8 @@ class BrandController extends Controller
      */
     public function edit($id)
     {
-        $getBrandById = Brand::find($id);
-        return view('admin.brand.edit_brand', compact('getBrandById'));
+        $getCategoryById = Category::find($id);
+        return view('admin.category.edit_category', compact('getCategoryById'));
     }
 
     /**
@@ -103,22 +104,22 @@ class BrandController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $pathName = Str::uuid() . '.' . $image->getClientOriginalExtension();
-            Image::make($image)->resize(110, 110)->save(BrandController::PUBLIC_PATH . $pathName);
+            Image::make($image)->resize(110, 110)->save(CategoryController::PUBLIC_PATH . $pathName);
         }
 
-        $getBrandById = Brand::find($id);
+        $getCategoryById = Category::find($id);
 
-        $imageExist = public_path(BrandController::PUBLIC_PATH  . $getBrandById->image);
+        $imageExist = public_path(CategoryController::PUBLIC_PATH  . $getCategoryById->image);
         if (file_exists($imageExist)) {
             unlink($imageExist);
         }
-        $getBrandById->name = $request->name;
-        $getBrandById->image = $pathName;
-        $getBrandById->save();
+        $getCategoryById->name = $request->name;
+        $getCategoryById->image = $pathName;
+        $getCategoryById->save();
 
-        toastr()->success('Updated Brand Success');
+        toastr()->success('Updated Category Success');
 
-        return view('admin.brand.edit_brand', compact('getBrandById'));
+        return view('admin.category.edit_category', compact('getCategoryById'));
     }
 
     /**
@@ -129,17 +130,16 @@ class BrandController extends Controller
      */
     public function destroy($id)
     {
-        $getBrandById = Brand::find($id);
+        $getCategoryById = Category::find($id);
 
-        $imageExist = public_path(BrandController::PUBLIC_PATH  . $getBrandById->image);
+        $imageExist = public_path(CategoryController::PUBLIC_PATH  . $getCategoryById->image);
         if (file_exists($imageExist)) {
             unlink($imageExist);
         }
-        Brand::destroy($id);
+        Category::destroy($id);
 
+        toastr()->success('Deleted Category Success');
 
-        toastr()->success('Deleted Brand Success');
-
-        return redirect()->back();
+        return redirect('admin/categories');
     }
 }
