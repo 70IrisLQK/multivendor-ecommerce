@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Vendor;
 
 use App\Http\Controllers\Controller;
 use App\Models\Brand;
@@ -8,19 +8,16 @@ use App\Models\Category;
 use App\Models\MultiImages;
 use App\Models\Product;
 use App\Models\SubCategory;
-use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use Illuminate\Database\QueryException as Query;
 use Intervention\Image\ImageManagerStatic as Image;
-use PhpParser\Node\Stmt\TryCatch;
 
 class ProductController extends Controller
 {
-    public const PUBLIC_PATH = 'upload/products/thumbnail/';
-    public const ACTIVE = 'active';
-
+    const PUBLIC_PATH = 'upload/products/thumbnail/';
+    const ACTIVE = 'active';
     /**
      * Display a listing of the resource.
      *
@@ -28,8 +25,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $listProducts = Product::latest()->get();
-        return view('admin.product.list_product', compact('listProducts'));
+        $id = Auth::user()->id;
+        $listProductsById = Product::where('id', $id)->latest()->get();
+        return view('vendor.vendor_product.list_vendor_product', compact('listProductsById'));
     }
 
     /**
@@ -39,15 +37,11 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $activeVendor = User::where('status', 'active')->where('role', 'vendor')->latest()->get();
-        $listCategory = Category::all();
+        $listCategory = Category::with('subCategories')->get();
         $listBrand = Brand::all();
-        $listSubCategory = SubCategory::all();
-        return view('admin.product.create_product', compact(
+        return view('vendor.vendor_product.create_vendor_product', compact(
             'listCategory',
             'listBrand',
-            'listSubCategory',
-            'activeVendor'
         ));
     }
 
@@ -155,7 +149,7 @@ class ProductController extends Controller
         $listSubCategory = SubCategory::all();
         $getProductById = Product::find($id);
         $multiImages = MultiImages::where('product_id', $id)->get();
-        return view('admin.product.edit_product', compact(
+        return view('vendor.vendor_product.edit_vendor_product', compact(
             'getProductById',
             'listCategory',
             'listBrand',
@@ -282,6 +276,7 @@ class ProductController extends Controller
 
     public function getSubCategory($id)
     {
+        dd($id);
         $getSubcategoryById = SubCategory::where('category_id', $id)->get();
         return json_encode($getSubcategoryById);
     }

@@ -39,7 +39,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($listProducts as $key => $product)
+                                @foreach ($listProductsById as $key => $product)
                                     <tr>
                                         <td>{{ $key + 1 }}</td>
                                         <td>{{ $product->name }}</td>

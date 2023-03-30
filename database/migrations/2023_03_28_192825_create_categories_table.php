@@ -16,7 +16,10 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
-            $table->string('slug')->nullable()->index();
+            $table->string('slug')->nullable()->unique();
+            $table->string('description')->nullable();
+            $table->string('status', 60)->default('published');
+            $table->tinyInteger('is_featured')->default('0');
             $table->string('image')->nullable();
             $table->softDeletes();
             $table->timestamps();

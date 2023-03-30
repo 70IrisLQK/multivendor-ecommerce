@@ -17,16 +17,15 @@ return new class extends Migration
             $table->id();
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->foreignId('brand_id')->constrained()->onDelete('cascade');
-            $table->foreignId('subcategory_id')->constrained('sub_categories')->onDelete('cascade');
             $table->string('name')->nullable();
             $table->string('slug')->unique();
-            $table->string('code')->nullable();
+            $table->string('code')->nullable()->unique();
             $table->string('qty')->nullable();
             $table->string('tags')->nullable();
             $table->string('size')->nullable();
             $table->string('color')->nullable();
-            $table->decimal('selling_price', 3, 1)->nullable();
-            $table->decimal('discount_price', 3, 1)->nullable();
+            $table->double('selling_price')->nullable();
+            $table->double('discount_price')->nullable();
             $table->text('short_description')->nullable();
             $table->text('long_description')->nullable();
             $table->string('thumbnail')->nullable();
@@ -38,6 +37,7 @@ return new class extends Migration
             $table->unsignedInteger('vendor_id')->index()->nullable();
             $table->softDeletes();
             $table->timestamps();
+            $table->index(['brand_id', 'category_id']);
         });
     }
 

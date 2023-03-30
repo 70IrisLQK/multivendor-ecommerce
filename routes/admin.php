@@ -26,7 +26,7 @@ Route::prefix('admin')->middleware('auth', 'role:admin')->group(function () {
   Route::resource('brands', BrandController::class);
 
   //Route Category
-  Route::get('categories/{id}', [CategoryController::class, 'destroy'])->name('categories.destroy');
+  // Route::get('categories/{id}', [CategoryController::class, 'destroy'])->name('categories.destroy');
   Route::resource('categories', CategoryController::class);
 
   //Route SubCategory
@@ -38,5 +38,7 @@ Route::prefix('admin')->middleware('auth', 'role:admin')->group(function () {
   Route::post('vendors/update-status', [VendorController::class, 'updateStatus']);
 
   // Route product
+  Route::put('products/thumbnail/{id}', [ProductController::class, 'updateThumbnail'])->name('products.update-thumb');
+  Route::put('products/multi-images/{id}', [ProductController::class, 'updateMultiImages'])->name('products.update-multi-images');
   Route::resource('products', ProductController::class);
 });

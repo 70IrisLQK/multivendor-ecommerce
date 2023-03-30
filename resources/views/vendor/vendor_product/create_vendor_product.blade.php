@@ -120,31 +120,19 @@
                                             </div>
                                             <div class="col-12">
                                                 <label for="inputVendor" class="form-label">Product Category</label>
-                                                <select class="form-select" id="inputVendor" name="category_id">
+                                                <select class="form-select" name="category_id">
                                                     <option value="">Open to select category</option>
                                                     @foreach ($listCategory as $item)
                                                         <option value="{{ $item->id }}">{{ $item->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
-
                                             <div class="col-12">
                                                 <label for="inputCollection" class="form-label">Product
                                                     SubCategory</label>
-                                                <select class="form-select" id="inputCollection" name="subcategory_id">
+                                                <select class="form-select" name="subcategory_id">
                                                     <option value="">Open to select subcategory</option>
-                                                    @foreach ($listSubCategory as $item)
-                                                        <option value="{{ $item->id }}">{{ $item->name }}</option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputVendor" class="form-label">Vendor</label>
-                                                <select class="form-select" id="inputVendor" name="vendor_id">
-                                                    <option value="">Open to select vendor</option>
-                                                    @foreach ($activeVendor as $item)
-                                                        <option value="{{ $item->id }}">{{ $item->name }}</option>
-                                                    @endforeach
+
                                                 </select>
                                             </div>
                                             <div class="row g-3">
@@ -203,4 +191,33 @@
         </div>
 
     </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('select[name="category_id"]').on('change', function() {
+                var optionSelected = $("option:selected", this);
+                var valueSelected = this.value;
+                alert(optionSelected);
+                var category_id = $(this).val();
+                alert(category_id);
+                if (category_id) {
+                    $.ajax({
+                        url: "{{ url('/subcategory/ajax') }}/" + category_id,
+                        type: "GET",
+                        dataType: "json",
+                        success:: function(data) {
+                            $('select[name="subcategory_id"]').html('');
+                            var d = $('select[name="subcategory_id"]').empty();
+                            $.each(data, function(key, value) {
+                                $('select[name="subcategory_id"]').append(
+                                    '<option value="' + value.id + '">' + value
+                                    .subcategory_name + '</option>');
+                            });
+                        },
+                    });
+                } else {
+                    alert('danger');
+                }
+            });
+        });
+    </script>
 @endsection

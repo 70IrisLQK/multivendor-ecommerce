@@ -29,7 +29,8 @@
                                     <th>Category Name</th>
                                     <th>Created date</th>
                                     <th>Updated date</th>
-                                    <th>Action</th>
+                                    <th>View Details</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -41,16 +42,28 @@
                                         <td>{{ $subcategory->created_at }}</td>
                                         <td>{{ $subcategory->updated_at }}</td>
                                         <td>
-                                            <a href="{{ route('subcategories.edit', [$subcategory->id]) }}"
-                                                class="btn btn-info">Edit</a>
-                                            <form action="{{ route('subcategories.destroy', [$subcategory->id]) }}"
-                                                method="POST">
+                                            <form action="{{ route('subcategories.show', [$subcategory->id]) }}"
+                                                method="get">
                                                 @csrf
-                                                @method('delete')
-                                                <button class="btn btn-danger">
-                                                    Delete
-                                                </button>
+                                                <button type="button" class="btn btn-primary btn-sm radius-30 px-4">View
+                                                    Details</button>
                                             </form>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex">
+                                                <form action="{{ route('subcategories.edit', [$subcategory->id]) }}"
+                                                    method="get">
+                                                    @csrf
+                                                    <button class="btn btn-success btn-sm radius-30 px-4">Edit</button>
+                                                </form>
+                                                <form action="{{ route('subcategories.destroy', [$subcategory->id]) }}"
+                                                    method="post">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit"
+                                                        class="btn btn-danger btn-sm radius-30 px-4 show_confirm">Delete</button>
+                                                </form>
+                                            </div>
                                         </td>
                                     </tr>
                                 @endforeach

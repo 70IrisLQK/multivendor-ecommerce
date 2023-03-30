@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Vendor\ProductController;
 use App\Http\Controllers\Vendor\VendorController;
+use App\Http\Middleware\RedirectIfAuthenticated;
 use Illuminate\Support\Facades\Route;
 
 Route::get('vendor/login', [VendorController::class, 'vendorLogin'])
@@ -17,4 +19,8 @@ Route::prefix('vendor')->middleware('auth', 'role:vendor')->group(function () {
   Route::put('update-profile/{id}', [VendorController::class, 'vendorUpdateProfile'])->name('vendor.update-profile');
   Route::put('update-password', [VendorController::class, 'vendorUpdatePassword'])->name('vendor.update-password');
   Route::post('logout', [VendorController::class, 'vendorLogout'])->name('vendor.logout');
+
+  //Vendor product route
+  Route::get('products/subcategory/ajax/{id}', [ProductController::class, 'getSubCategory']);
+  Route::resource('products', ProductController::class);
 });
